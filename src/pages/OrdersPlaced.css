@@ -1,0 +1,133 @@
+/* OrdersPlaced.css */
+
+/* General container */
+.orders-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Page heading */
+.orders-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Individual order card */
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Order headings */
+.order-card h3 {
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+/* Order details */
+.order-card p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.order-card strong {
+  color: #34495e;
+}
+
+/* Items list */
+.order-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.order-card ul li {
+  background: #ecf0f1;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Download button */
+.download-btn {
+  margin-top: 15px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #2ecc71;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* No orders section */
+.orders-container button {
+  margin-top: 20px;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.orders-container button:hover {
+  background: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .order-card {
+    padding: 15px 20px;
+  }
+
+  .download-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .orders-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .orders-container {
+    padding: 15px;
+  }
+
+  .order-card ul li {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

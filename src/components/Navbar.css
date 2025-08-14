@@ -1,0 +1,143 @@
+/* ================== Navbar Container ================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px;
+  background: linear-gradient(90deg, #fff, #fff, #fff);
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: static;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* ================== Logo ================== */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000; /* black text */
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================== Navigation Links ================== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000; /* black text */
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: #fff; /* text white on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+}
+
+/* ================== Cart Link and Count ================== */
+.cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  min-width: 20px;
+}
+
+/* ================== Logout Button ================== */
+.logout-btn {
+  padding: 8px 15px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff; /* white text for button */
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 75, 43, 0.4);
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 25px;
+  }
+  .nav-links {
+    gap: 18px;
+  }
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .nav-links a,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

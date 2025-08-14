@@ -1,0 +1,73 @@
+.checkout-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.order-message {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #d9534f; /* red for errors */
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.checkout-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.credit-card-section {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
